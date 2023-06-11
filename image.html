@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.container {
+  display: flex;
+}
+
+.grid-60 {
+  width: 60%;
+}
+
+.grid-40 {
+  width: 40%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.span-2 {
+  flex-basis: 100%;
+}
+
+.span-2-6 {
+  flex-basis: 33.333%;
+}
+
+  </style>
+</head>
+<body>
+  
+
+  <div class="container">
+    <div class="grid-60">
+      <div class="row">
+        <div class="col span-2" style="background-color: #ffa500;">Content</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: #6495ed;">Content</div>
+        <div class="col" style="background-color: #dc143c;">Content</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background-color: #8fbc8f;">Content</div>
+        <div class="col" style="background-color: #ffd700;">Content</div>
+      </div>
+      <div class="row">
+        <div class="col span-2" style="background-color: #ffa500;">Content</div>
+      </div>
+    </div>
+    <div class="grid-40">
+      <div class="row">
+        <div class="col span-2-6" style="background-color: #008080;">Content</div>
+        <div class="col span-2-6" style="background-color: #8b008b;">Content</div>
+        <div class="col span-2-6" style="background-color: #ff1493;">Content</div>
+      </div>
+      <div class="row">
+        <div class="col span-2-6" style="background-color: #008080;">Content</div>
+        <div class="col span-2-6" style="background-color: #8b008b;">Content</div>
+        <div class="col span-2-6" style="background-color: #ff1493;">Content</div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>  
